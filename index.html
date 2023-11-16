@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+
+<body style="background: url(images/background8.jpg) center center fixed; background-size: cover;">
+    <div class="container">
+        <form id="registrationForm" action="confirmation.html" method="post">
+            <h2>Registration Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+            <div id="password-strength-text" class="password-strength-text"></div>
+            <div id="password-strength"></div>
+
+            
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script src="password-strength.js"></script>
+</body>
+
+</html>
+
